@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 700px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: white;
+      color: #ff4b6e;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ffe6eb;
+    }
+
+    .heart {
+      position: absolute;
+      color: rgba(255,255,255,0.8);
+      animation: float 6s linear infinite;
+      font-size: 20px;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(100vh);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>❤️ I'm Sorry Judy🐇 ❤️</h1>
+
+  <p>
+    
+I don't know what's going on with you, but shutting me out isn't the solution. I know you're going through something—maybe not physically, but mentally, and I can feel that you're carrying a lot.
+
+I don't want you to face it all alone. I'm here for you, in every situation, through every high and every low. Please don't push me away or cut me out of your life.
+
+You know what you mean to me. I care about you deeply, and all I want is for you to know that you don't have to go through this by yourself. Please... 🥺🫂❤️
+  </p>
+
+  <p>
+    Thank you for your patience, your kindness, and all the beautiful moments we've shared.
+    I promise to learn, grow, and do better because you're worth every effort.
+  </p>
+
+  <button onclick="click()"m sorry, माय डियर मैडम जी,please talk to me ❤️</button>
+
+  <p id="message" style="margin-top:20px;font-weight:bold;"></p>
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("message").innerHTML =
+    "No matter what happens, you'll always be special to me. ❤️";
+}
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * window.innerWidth + "px";
+  heart.style.fontSize = (15 + Math.random() * 25) + "px";
+  heart.style.animationDuration = (3 + Math.random() * 4) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 7000);
+}
+
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
